@@ -18,14 +18,17 @@ DDIA책에서는 대부분의 소프트웨어 시스템에서 중요시 되는 �
     - 유저의 실수 혹은 잘못된 사용방법에도 "tolerate" 할 수 있어야 한다
     - 주어진 Requirements즉, 예상되는 data / traffic 볼륨에도 충분히 수행할 수 있어야 한다.
     - malicious 한 인풋 (unauthorized access / abuse)를 막을 수 있어야 한다.
-  - 즉 우리가 의미하는 reliability란 fault-tolerant or resilient 와도 같다. 여기서 주의할 점은 fault란 <span style="color:red">failure</span>와는 다른 개념이다. **fault** 는 시스템 내부 하나의 component가 약간 오작동(?) 하는것이라 하면 **failure**는 전체 시스템의 동작이 멈추는것과 동치한다. 
+  - 즉 우리가 의미하는 reliability란 fault-tolerant or resilient 와도 같다. 여기서 주의할 점은 fault란 <span style="color:red">failure</span>와는 다른 개념이다. **fault** 는 시스템 내부 하나의 component가 약간 오작동(?) 하는것이라 하면 <span style="color:red">failure</span>는 전체 시스템의 동작이 멈추는것과 동치한다. 
   - 실제 예제들이 어떻게 fault-tolerant한 시스템을 구성했는지는 아래의 링크를 참조하면 좋을것 같다
     - https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf
     - https://medium.com/netflix-techblog/the-netflix-simian-army-16e57fbab116
   - Security가 중요시 여겨지는 앱에서는 fault-preventing이 더 중요시 여겨지지만 해당 책에서는 전자의 경우를 중점적으로 다룬다
 - Hardware Faults
-- Software Erros
+  - 기존에는 redundancy of HW compoenents가 있다면 대부분의 어플리케이션에서는 충분했지만, 데이터의 볼륨이 커지고 computing power의 수요가 더욱 커짐에 따라 많은 어플리케이션들이 더 많은 수의 서버들을 사용하기 시작했다.
+  - 그에 따라 비율적으로 하드웨어 faults rate이 함께 증가.
+  - 자세한 내용은 챕터 4에서 다룸.
 - Human Errors
+  - Well desined abstraction, API 혹은 admin interafaces가 human error를 줄이는데 도움.
 - Scalability
 - Describing Load
 - Describing Performance
