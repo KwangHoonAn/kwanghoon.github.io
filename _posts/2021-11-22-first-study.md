@@ -13,5 +13,6 @@ DDIA책에서는 대부분의 소프트웨어 시스템에서 중요시 되는 �
 **Maintainability** <br /> 시스템은 유지 보수 및 새로운 use case에 적용 할 시 productive하게 동작할 수 있도록 설계되어야 합니다.
 
 - Reliability
-1.asdasd
+  - Hi
+  - 
 - asd  
