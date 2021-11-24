@@ -44,7 +44,6 @@ DDIA책에서는 대부분의 소프트웨어 시스템에서 중요시 되는 �
   - Scale up (CPU / Memory 등 Hardware 스펙을 고성능으로 교체)
   - Scale out : Server들을 horizontally추가. 어떤 경우는 autoscaling등으로 stateless 서비스 경우에 쉽게 구현이 가능
 - Maintainability
-  - 
-- Operability: Making life easy for operations
-- Simplicity: Managing Complexity
-- Evolvability: Making Change Easy
+  - Operability: Making life easy for operations
+  - Simplicity: Managing Complexity
+  - Evolvability: Making Change Easy
