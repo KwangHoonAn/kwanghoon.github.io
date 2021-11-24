@@ -41,7 +41,10 @@ DDIA책에서는 대부분의 소프트웨어 시스템에서 중요시 되는 �
 - Describing Performance
   - Response time을 measure할때는 arithmetic mean보다는 percentile로 측정하는것이 좋다. 예를들면 median같은 경우는 50th percentile이고 outliers들의 response time을 확인하고자 할때는 p95, p99 and p999 단위로 점진적으로 확인 할 수 있다.
 - Approaches for Coping with Load
+  - Scale up (CPU / Memory 등 Hardware 스펙을 고성능으로 교체)
+  - Scale out : Server들을 horizontally추가. 어떤 경우는 autoscaling등으로 stateless 서비스 경우에 쉽게 구현이 가능
 - Maintainability
+  - 
 - Operability: Making life easy for operations
 - Simplicity: Managing Complexity
 - Evolvability: Making Change Easy
